@@ -1,7 +1,15 @@
 function mostrar()
 {
+var cont=0
+var clave = prompt("contraseña");
+while (clave!="utn750"&&cont>3){
+clave=prompt("error");
+clave=cont;
 
-var clave = prompt("ingrese el número clave.");
+
+
+
+}
 
 
 }//FIN DE LA FUNCIÓN
