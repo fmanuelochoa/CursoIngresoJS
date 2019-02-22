@@ -3,7 +3,13 @@ function mostrar()
 
 	var contador=0;
 	var acumulador=0;
-	var respuesta='si';
+  var respuesta='si';
+  while(respuesta=='si'){
+respuesta=prompt("numeros");
+  }
+
+
+
 
 
 document.getElementById('suma').value=acumulador;
