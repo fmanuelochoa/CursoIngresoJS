@@ -5,32 +5,35 @@ function mostrar()
   var maximo;
   var minimo;
   var numero;
+  var resultado=true;
+  
+  
   do{
-    (confirm("desea continuar"))
+   
     numero=prompt("numeroo");
     numero=parseInt(numero);
-  }
-  while(isNaN(numero));
-  if(bandera){
+
+  } while(isNaN(numero));
+    if(bandera==true){
     bandera=false;
     maximo=numero;
     minimo=numero;
-  }else{
+  }
     if(numero>maximo){
-      maximo=numero
-    }if(numero<minimo){
+      maximo=numero;
+    }else 
+    if(numero<minimo){
       minimo=numero;
     }
-  }
-	// declarar variables
 
 
-	{
-
-
-	}
+resultado=confirm("desea continuar");
 
 
 
 
-}//FIN DE LA FUNCIÓN
+
+}
+
+
+  
