@@ -1,6 +1,6 @@
 function mostrar()
 {
-	//Variables.
+
 	var contador;
 	var sexo;
 	var nota;
@@ -9,29 +9,28 @@ function mostrar()
 	var notaMasBaja;
 	var sexoNotaMasBaja;
 	var cantidadVarones;
-	//Inicializaciones.
-	contador = 0;
+	contador=0;
 	notaMasBaja = 0;
 	cantidadVarones = 0;
 	promedio = 0;
 	total=0;
-	while(contador < 5)
-	{
-		//Tomar y validar datos.
-		sexo = prompt("Ingrese sexo:");
-		while (sexo!="m" && sexo!="f")
-		{
-			sexo = prompt("Re-ingrese sexo:");
+
+	
+	do{
+		
+		sexo=prompt("sexo ingrese");
+		contador++;
+		while(sexo!="m" && sexo!="f"){
+			sexo=prompt("re-ingrese sexo");
 		}
-		nota = prompt("Ingrese nota:");
-		nota = parseInt(nota);
-		while (isNaN(nota) || nota < 0 || nota > 10)
-		{
-			nota = prompt("Re-ingrese nota:");
-			nota = parseInt(nota);
+		nota=prompt("ingrese nota");
+		nota=parseInt(nota);
+		while(isNaN(nota) || nota > 10 || nota < 0){
+			nota=prompt("re-ingrese nota");
+			nota=parseInt(nota);
 		}
-		//Lógica del programa.
-		if(contador==0)
+		
+		if(contador==1)
 		{
 			notaMasBaja = nota;
 			sexoNotaMasBaja = sexo;
@@ -50,10 +49,19 @@ function mostrar()
 			}
 		}
 		total = total + nota;
-		contador++;
-	}
-	promedio = total / contador;
-	//Presentar información.
-	alert("Promedio de notas: "+promedio+". Nota mas baja "+notaMasBaja+" y el sexo "+sexoNotaMasBaja+". Cantidad de varones con nota mayor a 6: "+cantidadVarones);
 
+	}while(contador<5);
+	promedio = total / contador;
+
+	alert("Promedio de notas: "+promedio+". Nota mas baja "+notaMasBaja+" y el sexo "+sexoNotaMasBaja+". Cantidad de varones con nota mayor a 6: "+cantidadVarones);
 }
+
+	
+
+
+	
+
+
+	
+
+

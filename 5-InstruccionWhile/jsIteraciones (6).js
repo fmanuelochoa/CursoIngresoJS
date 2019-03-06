@@ -14,6 +14,7 @@ function mostrar()
     {
       numero=prompt("el numero")
     numero=parseInt(numero)}
+    
 
 
 
